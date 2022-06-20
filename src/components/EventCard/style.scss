@@ -1,0 +1,33 @@
+.event-card {
+  height: 20px;
+
+  &__content {
+    height: 18px;
+    padding: 0 0 0 4px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 18px;
+    color: #212121;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: #d2fdc7;
+    border-radius: 6px;
+
+    &_low {
+      background-color: #d2fdc7;
+    }
+
+    &_middle {
+      background-color: #fde7c7;
+    }
+
+    &_high {
+      background-color: #ff8282;
+    }
+
+    &:hover {
+      position: absolute;
+    }
+  }
+}

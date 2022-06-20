@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+}
+
+.prev,
+.next {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.prev {
+  background-image: url("../../assets/images/arrow-left.png");
+}
+
+.next {
+  background-image: url("../../assets/images/arrow-right.png");
+}
+
+.title {
+  margin: 0 10px;
+  font-weight: 500;
+  color: #a183ba;
+  text-transform: uppercase;
+}

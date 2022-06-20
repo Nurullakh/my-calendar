@@ -1,0 +1,56 @@
+.calendar-day {
+  flex: 1;
+  height: 112px;
+  padding: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &__content {
+    height: 100%;
+    padding: 5px;
+    overflow-y: scroll;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &_other-mounth {
+      background-color: #ddd;
+
+      .calendar-day__number {
+        color: #c2c2c2;
+      }
+      
+      .event-card {
+        opacity: 0.5;
+      }
+    }
+
+    &_weekend {
+      .calendar-day__number {
+        color: #a183ba;
+      }
+    }
+
+    &_today {
+      border: 1px solid #bdbdbd;
+
+      .calendar-day__number {
+        color: #41ee00;
+      }
+    }
+  }
+
+  &__number {
+    font-weight: 500;
+    text-align: right;
+  }
+
+  &__event-wrapper {
+    margin-top: 5px;
+  }
+}
